@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSaver</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WebSaver</h1>
+
+        <div id="save-section">
+            <h2>Save Current Page</h2>
+            <p id="current-page-title">Loading page title...</p>
+            <textarea id="notes" placeholder="Add optional notes..."></textarea>
+            <button id="save-button">Save This Page</button>
+            <p id="save-status" class="status-message"></p>
+        </div>
+
+        <hr>
+
+        <div id="items-section">
+            <h2>Saved Items</h2>
+            <div id="loading-items" class="loading">Loading items...</div>
+            <ul id="items-list"></ul>
+            <p id="items-status" class="status-message"></p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
